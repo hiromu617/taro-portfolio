@@ -5,4 +5,9 @@ export type Article = {
   readonly createdAt: string;
   readonly publishedAt: string;
   readonly reviseAt: string;
+  readonly thumbnail: {
+    url: string;
+    height: number;
+    width: number;
+  };
 };

@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Header />
-      <Container bg="gray.400" p="5" mt="60px">
+      <Container p="5" mt="60px">
         <Component {...pageProps} />
       </Container>
     </ChakraProvider>

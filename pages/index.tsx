@@ -3,21 +3,19 @@ import Link from 'next/link';
 import { client } from '../libs/client';
 import type { Article } from '../types/Article';
 import type { ResponseHeader } from '../types/ResponseHeader';
+import { Card } from '../components/Card';
+import { VStack } from '@chakra-ui/react';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 const Home: NextPage<Props> = ({ articles }) => {
   return (
     <div style={{ height: '1000px' }}>
-      <ul>
+      <VStack spacing="8">
         {articles.map((article) => (
-          <li key={article.id}>
-            <Link href={`/articles/${article.id}`}>
-              <a>{article.title}</a>
-            </Link>
-          </li>
+          <Card key={article.id} article={article} />
         ))}
-      </ul>
+      </VStack>
     </div>
   );
 };
