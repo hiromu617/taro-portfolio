@@ -44,7 +44,7 @@ export const Header: VFC = () => {
                   About
                 </Button>
               </Link>
-              <Link href="/">
+              <Link href="https://mobile.twitter.com/taro_ae1023">
                 <Button
                   variant="link"
                   aria-label={'Toggle Navigation'}
@@ -56,7 +56,7 @@ export const Header: VFC = () => {
                   Twitter
                 </Button>
               </Link>
-              <Link href="/">
+              <Link href="https://instagram.com/taro_aftereffects">
                 <Button
                   variant="link"
                   aria-label={'Toggle Navigation'}

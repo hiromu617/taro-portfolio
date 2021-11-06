@@ -59,13 +59,13 @@ export const Footer: VFC = () => {
       >
         <Text>© 2021 Taro. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
+          <SocialButton label={'Twitter'} href={'https://mobile.twitter.com/taro_ae1023'}>
             <FaTwitter />
           </SocialButton>
           {/* <SocialButton label={'YouTube'} href={'#'}>
             <FaYoutube />
           </SocialButton> */}
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={'Instagram'} href={'https://instagram.com/taro_aftereffects'}>
             <FaInstagram />
           </SocialButton>
         </Stack>
