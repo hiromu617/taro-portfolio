@@ -6,6 +6,9 @@ export const theme = extendTheme({
       body: {
         backgroundColor: "gray.900",
         color: "white"
+      },
+      iframe: {
+        width: "100%",
       }
     }
   }

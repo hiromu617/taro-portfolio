@@ -10,13 +10,11 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 const Home: NextPage<Props> = ({ articles }) => {
   return (
-    <div style={{ height: '1000px' }}>
-      <VStack spacing="8">
-        {articles.map((article) => (
-          <Card key={article.id} article={article} />
-        ))}
-      </VStack>
-    </div>
+    <VStack spacing="14">
+      {articles.map((article) => (
+        <Card key={article.id} article={article} />
+      ))}
+    </VStack>
   );
 };
 

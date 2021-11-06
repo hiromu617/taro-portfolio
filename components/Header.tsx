@@ -79,8 +79,8 @@ export const Header: VFC = () => {
         bg="transparent"
         justifyContent="center"
         alignItems="center"
-        borderBottom="2px"
-        borderColor="gray.500"
+        borderBottom="1px"
+        borderColor="white"
         pos="fixed"
         top="0"
         right="0"
@@ -93,13 +93,17 @@ export const Header: VFC = () => {
           variant={'ghost'}
           aria-label={'Toggle Navigation'}
           bg="transparent"
-          colorScheme="whiteAlpha"
+          colorScheme="white"
           pos="absolute"
           left="5"
         />
         <Link href="/">
-          <Heading size="lg" textShadow=" 2px 2px 2px rgba(255,255,255,0.4)">
-            Taro Portforio
+          <Heading
+            size="lg"
+            textShadow=" 2px 2px 2px rgba(255,255,255,0.4)"
+            style={{ fontFamily: 'din-2014' }}
+          >
+            Taro Portfolio
           </Heading>
         </Link>
       </Flex>
