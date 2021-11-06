@@ -3,9 +3,7 @@ import {
   Box,
   Container,
   Stack,
-  SimpleGrid,
   Text,
-  Link,
   VisuallyHidden,
   chakra,
   useColorModeValue,
@@ -54,10 +52,10 @@ export const Footer: VFC = () => {
         as={Stack}
         maxW={'6xl'}
         py={4}
-        direction={{ base: 'column', md: 'row' }}
+        direction={'row'}
         spacing={4}
-        justify={{ md: 'space-between' }}
-        align={{ md: 'center' }}
+        justify={'space-between'}
+        align={'center'}
       >
         <Text>© 2021 Taro. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>

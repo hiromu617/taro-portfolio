@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <link rel="stylesheet" href="https://use.typekit.net/ntm0tzg.css"></link>
       <Header />
-      <Container pt="14" pb="20" px="5" mt="60px">
+      <Container pt="14" pb="20" px="5" mt="60px" minH="85vh">
         <Component {...pageProps} />
       </Container>
       <Footer />

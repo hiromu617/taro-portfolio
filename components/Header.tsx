@@ -39,7 +39,7 @@ export const Header: VFC = () => {
                   Home
                 </Button>
               </Link>
-              <Link href="/">
+              <Link href="/about">
                 <Button colorScheme="white" variant="link" size="lg">
                   About
                 </Button>

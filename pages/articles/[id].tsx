@@ -7,20 +7,44 @@ import { client } from '../../libs/client';
 import type { NextPage } from 'next';
 import type { Article } from '../../types/Article';
 import type { ResponseHeader } from '../../types/ResponseHeader';
+import {
+  Box,
+  Container,
+  Stack,
+  Text,
+  VisuallyHidden,
+  chakra,
+  useColorModeValue,
+} from '@chakra-ui/react';
+import { parseDate } from '../../utils/parseDate';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 const ArticleId: NextPage<Props> = ({ article }) => {
   return (
-    <main>
-      <h1>{article.title}</h1>
-      <p>{article.publishedAt}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${article.body}`,
-        }}
-      />
-    </main>
+    <Box textAlign="center">
+      <Box
+        fontSize="3xl"
+        fontWeight="semibold"
+        as="h2"
+        lineHeight="tight"
+        isTruncated
+      >
+        {article.title}
+      </Box>
+      <Box mt="4">
+        <Text fontSize="md" color="gray.400">
+          {parseDate(article.createdAt)}
+        </Text>
+      </Box>
+      <Box py={20}>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${article.body}`,
+          }}
+        />
+      </Box>
+    </Box>
   );
 };
 

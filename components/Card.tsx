@@ -27,10 +27,6 @@ export const Card: VFC<{ article: Article }> = ({ article }) => {
           height={'250px'}
           objectFit="cover"
         />
-        {/* <Box p={4} textAlign="center">
-          <Text mb="4">{article.title}</Text>
-          <Text fontSize="xs">{parseDate(article.createdAt)}</Text>
-        </Box> */}
         <Box p="6">
           <Box
             fontSize="2xl"
